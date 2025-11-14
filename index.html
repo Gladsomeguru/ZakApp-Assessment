@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOKICHI</title>
+    <link rel="icon" type="image/jpg" href="assets/icon.jpg">
+    <link rel="stylesheet" href="/product.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="secondary-nav">
+            <div class="location-nav">
+                <div class="location-dropdown">USD <i class="bi bi-chevron-down small-icon"></i></div>
+                <p class="no-margin"><i class="bi bi-geo-alt-fill small-icon"></i> Stores </p>
+            </div>
+            <p class="no-margin">Login / Register</p>
+        </nav>
+        <nav class="main-nav d-flex">
+            <img src="assets/site-logo.png" alt="abokichi" width="180px" role="button" onclick="goToHome()">
+            <div class="menu d-flex">
+                <a href="#">Shop <i class="bi bi-chevron-down small-icon"></i></a>
+                <a href="#">Our story</i></a>
+                <a href="#">Recipes</i></a>
+                <a href="#">Contact</i></a>
+            </div>
+            <div class="favourites d-flex">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-heart"></i>
+                <div class="cart" id="card-count" role="button" onclick="goToCart()">
+                    <i class="bi bi-bag"></i>
+                    <h5 class="no-margin cart-count" id="cart-count"></h5>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="assets/hero1.jpg" alt="" width="100%">
+            </div>
+            <div class="hero-img">
+                <img src="assets/hero2.jpg" alt="" width="100%">
+            </div>
+            <div class="hero-content">
+                <p class="no-margin">
+                    Nourish <br>
+                    Yourself with<br>
+                    <span class="highlight">MISO</span> <br>
+                    <span class="highlight">Goodness</span>
+                </p>
+                <a href="/products.html" class="primary-btn" role="button">Shop now</a>
+                <p class="sub-text"><span style="font-weight: bold;">Free shipping</span> within the <br>
+                    US for ordersof $54 or more.</p>
+            </div>
+        </section>
+        <div class="d-flex benefits">
+            <p class="no-margin"><i class="bi bi-check2-circle"></i> Vegan</p>
+            <p class="no-margin"><i class="bi bi-check2-circle"></i> KETO-friendly</p>
+            <p class="no-margin"><i class="bi bi-check2-circle"></i> Non-GMO</p>
+            <p class="no-margin"><i class="bi bi-check2-circle"></i> Organic miso</p>
+            <p class="no-margin"><i class="bi bi-check2-circle"></i> Glueton-Free</p>
+        </div>
+        <section class="feature-links">
+            <div class="feature-item">
+                <img src="assets/our-story.jpg" alt="">
+                <p class="no-margin">Our story</p>
+            </div>
+
+            <div class="feature-item">
+                <img src="assets/recipe.jpg" alt="">
+                <p class="no-margin">Recipes</p>
+            </div>
+        </section>
+        <section class="best-sellers">
+            <div class="best-title">
+                <img src="assets/icon.jpg" alt="Abokichi">
+                <h2>Best Sellers</h2>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card" role="button" onclick="goToProductListing()">
+                    <img src="assets/okazu1.jpg" alt="">
+                    <h3 class="product-title">OKAZU Lovers Set (230mL/12 jars)</h3>
+
+                    <div class="price-box">
+                        <span class="price">$135.00</span>
+                        <span class="old-price">$167.88</span>
+                    </div>
+
+                    <div class="rating-box">
+                        <div class="stars d-flex">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="reviews">32 Reviews</span>
+                    </div>
+                </div>
+
+                <div class="product-card" role="button" onclick="goToProductListing()">
+                    <img src="assets/okazu2.jpg" alt="">
+                    <h3 class="product-title">OKAZU – CHILI MISO – Japanese miso</h3>
+
+                    <div class="price-box">
+                        <span class="price">$12.00</span>
+                        <span class="old-price">$14.50</span>
+                    </div>
+
+                    <div class="rating-box">
+                        <div class="stars d-flex">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="reviews">18 Reviews</span>
+                    </div>
+                </div>
+
+                <div class="product-card" role="button" onclick="goToProductListing()">
+                    <img src="assets/okazu3.jpg" alt="">
+                    <h3 class="product-title">Instant Miso Soup Tasting Set</h3>
+
+                    <div class="price-box">
+                        <span class="price">$28.00</span>
+                        <span class="old-price">$32.00</span>
+                    </div>
+
+                    <div class="rating-box">
+                        <div class="stars d-flex">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="reviews">54 Reviews</span>
+                    </div>
+                </div>
+
+                <div class="product-card" role="button" onclick="goToProductListing()">
+                    <img src="assets/hero2.jpg" alt="">
+                    <h3 class="product-title">ABO Matcha: Uji matcha. Organic.</h3>
+
+                    <div class="price-box">
+                        <span class="price">$19.99</span>
+                        <span class="old-price">$24.99</span>
+                    </div>
+
+                    <div class="rating-box">
+                        <div class="stars d-flex">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <span class="reviews">12 Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-left">
+                    <i class="bi bi-send send-icon"></i>
+                    <div>
+                        <h3>SUBSCRIBE NEWSLETTER</h3>
+                        <p>get the latest on sales, new releases and more.</p>
+                    </div>
+                </div>
+
+                <div class="newsletter-right">
+                    <input type="email" placeholder="Enter your mail" />
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Links section -->
+        <div class="footer-links">
+            <div class="footer-links-left d-flex">
+                <div class="links-block d-flex">
+                    <h4 class="feature-title no-margin">LINKS</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Sitemap</a>
+                </div>
+
+                <div class="links-block d-flex">
+                    <h4 class="feature-title no-margin">INFORMATION</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund policy</a>
+                    <a href="#">Press</a>
+                </div>
+            </div>
+            <div class="payments d-flex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="mastercard">
+                <img src="assets/apple-pay.png" alt="applepay">
+                <img src="assets/amx-icon.png" alt="amex">
+            </div>
+        </div>
+
+        <!-- Social + copyright -->
+        <div class="footer-bottom">
+            <div class="socials d-flex">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <p>© 2021 Abokichi.</p>
+        </div>
+
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

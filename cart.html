@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOKICHI</title>
+    <link rel="icon" type="image/jpg" href="assets/icon.jpg">
+    <link rel="stylesheet" href="/product.css">
+    <link rel="stylesheet" href="/cart.css">
+    <link rel="stylesheet" href="/checkout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="secondary-nav">
+            <div class="location-nav">
+                <div class="location-dropdown">USD <i class="bi bi-chevron-down small-icon"></i></div>
+                <p class="no-margin"><i class="bi bi-geo-alt-fill small-icon"></i> Stores </p>
+            </div>
+            <p class="no-margin">Login / Register</p>
+        </nav>
+        <nav class="main-nav d-flex">
+            <img src="assets/site-logo.png" alt="abokichi" width="180px" role="button" onclick="goToHome()">
+            <div class="menu d-flex">
+                <a href="#">Shop <i class="bi bi-chevron-down small-icon"></i></a>
+                <a href="#">Our story</i></a>
+                <a href="#">Recipes</i></a>
+                <a href="#">Contact</i></a>
+            </div>
+            <div class="favourites d-flex">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-heart"></i>
+                <div class="cart" id="card-count" role="button" onclick="goToCart()">
+                    <i class="bi bi-bag"></i>
+                    <h5 class="no-margin cart-count" id="cart-count"></h5>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cart-container">
+
+            <div class="d-flex cart-header">
+                <h2 class="no-margin">Your Cart</h2>
+                <h4 class="no-margin" id="cart-count-1"></h4>
+            </div>
+            <div id="cart-items"></div>
+
+            <div class="cart-summary d-flex">
+                <h3>Total Amount</h3>
+                <h3 id="cart-total">$0</h3>
+            </div>
+            <button class="btn-dark" style="width: 100%; padding:1rem; font-size:16px" onclick="goToBuy()">Buy
+                Now</button>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- Links section -->
+        <div class="footer-links" style="background: rgb(235, 235, 235) !important;">
+            <div class="footer-links-left d-flex">
+                <div class="links-block d-flex">
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Sitemap</a>
+                </div>
+
+                <div class="links-block d-flex">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund policy</a>
+                    <a href="#">Press</a>
+                </div>
+            </div>
+            <div class="payments d-flex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="mastercard">
+                <img src="assets/apple-pay.png" alt="applepay">
+                <img src="assets/amx-icon.png" alt="amex">
+            </div>
+        </div>
+
+        <!-- Social + copyright -->
+        <div class="footer-bottom">
+            <div class="socials d-flex">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-pinterest"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <p>© 2021 Abokichi.</p>
+        </div>
+
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

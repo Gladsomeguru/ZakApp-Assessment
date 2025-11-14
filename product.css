@@ -1,0 +1,244 @@
+/* hero */
+.product-hero {
+    height: 40vh;
+    position: relative;
+}
+
+.product-hero::after {
+    content: "PRODUCTS";
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 18vh;
+    box-sizing: border-box;
+}
+
+.product-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* product listing */
+
+.product-listing {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding-bottom: 2rem;
+}
+
+.product-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 2rem 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgb(167, 167, 167);
+}
+
+
+
+/* tool-bar */
+
+.filter-display:nth-child(1) {
+    padding-right: 16px;
+    border-right: 1px solid gray;
+    width: fit-content;
+}
+
+.filter-display:nth-child(2) {
+    padding-left: 16px;
+    width: fit-content;
+    color: gray;
+}
+
+.filter-display {
+    gap: 16px;
+}
+
+.display-icon {
+    font-size: 24px;
+}
+
+.tool-btn {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 8px 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.tool-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Sort */
+.sort {
+    gap: 1rem;
+    position: relative;
+}
+
+#sort-dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+#sort-dropdown.open {
+    display: flex;
+}
+
+#sort-dropdown p {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+#sort-dropdown p:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+
+/* Product Grid */
+.product-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 4rem;
+    margin-inline: auto;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    box-sizing: border-box !important;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    outline: 1px solid rgb(222, 222, 222);
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    padding: 16px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+/* Title */
+.product-title {
+    margin: 0px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Pricing */
+.price-box {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.old-price {
+    font-style: italic;
+    text-decoration: line-through;
+    color: #777;
+}
+
+/* Rating */
+.rating-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-top: 2px solid #eee;
+    padding: 8px 1rem;
+    margin-top: auto;
+}
+
+.stars {
+    gap: 2px;
+    color: #ff9b00;
+    font-size: 1.3rem;
+    border-right: 2px solid lightgray;
+    padding-right: 8px;
+}
+
+.reviews {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* filter dropdown */
+.filter-dropdown {
+    display: none;
+    gap: 4rem;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-top: none;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.filter-dropdown.open {
+    display: flex;
+}
+
+.filter-section h4 {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 10px;
+}
+
+.filter-section h4::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: #0f3d2e;
+    /* dark green */
+    position: absolute;
+    left: 0;
+    top: 2px;
+    border-radius: 2px;
+}
+
+.filter-section label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.filter-section input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #222;
+}
