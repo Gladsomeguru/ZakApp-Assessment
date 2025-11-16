@@ -242,3 +242,19 @@
     height: 18px;
     accent-color: #222;
 }
+
+@media only screen and (max-width:720px){
+    .product-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-hero{
+        overflow: hidden;
+    }
+
+    .product-toolbar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

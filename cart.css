@@ -82,3 +82,15 @@
     right: 1rem;
     cursor: pointer;
 }
+
+@media only screen and (max-width:720px){
+    .cart-container{
+        width: auto;
+        padding: 0 1rem;
+    }
+    .cart-item{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
